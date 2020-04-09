@@ -9,7 +9,7 @@ export function PokemonsContainer() {
 
     return (
         <div className="pokemons">
-            {pokemons}
+            {pokemons && pokemons.map(pokemon => JSON.stringify(pokemon))}
         </div>
     )
 }
