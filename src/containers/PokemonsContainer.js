@@ -10,7 +10,7 @@ export function PokemonsContainer() {
 
     return (
         <div className="pokemons">
-            {pokemons && pokemons.map(pokemon => <Pokemon pokemon={pokemon} />)}
+            {pokemons && pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)}
         </div>
     )
 }
